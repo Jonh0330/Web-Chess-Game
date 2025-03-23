@@ -1,0 +1,74 @@
++-------------------+
+|      Game         |
++-------------------+
+| - board: Board    |
+| - player1: Player |
+| - player2: Player |
+| - currentTurn     |
++-------------------+
+| +startGame()      |
+| +makeMove(move)   |
+| +checkStatus()    |
++-------------------+
+
+        |
+        v
+
++-------------------+
+|      Board        |
++-------------------+
+| - grid: Piece[][] |
++-------------------+
+| +getPieceAt(x,y)  |
+| +movePiece(from,to)|
++-------------------+
+
+        ^
+        |
++-------------------+
+|     Piece (abstract)  |
++-------------------+
+| - color           |
+| - position        |
++-------------------+
+| +isValidMove()    |
++-------------------+
+
+        |
+  ----------------------------
+  |      |      |     |     |
+  v      v      v     v     v
+Pawn  Rook  Knight  Bishop  Queen  King
+(each inherits Piece and implements isValidMove())
+
++-------------------+
+|     Player        |
++-------------------+
+| - color           |
+| - name/id         |
++-------------------+
+
++-------------------+
+|     Move          |
++-------------------+
+| - from: Position  |
+| - to: Position    |
+| - pieceMoved      |
+| - pieceCaptured   |
++-------------------+
+
++------------------------+
+|    MoveValidator       |
++------------------------+
+| +isMoveLegal()         |
+| +isInCheck()           |
+| +isCheckmate()         |
++------------------------+
+
++------------------------+
+|    GameController      |
++------------------------+
+| +startNewGame()        |
+| +handleMove()          |
+| +getGameState()        |
++------------------------+
