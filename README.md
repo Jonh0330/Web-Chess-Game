@@ -43,5 +43,5 @@ A full-stack, containerized web-based chess game built with JavaScript, HTML/CSS
 ### Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/web-chess-eks.git
-cd web-chess-eks
+git clone https://github.com/yourusername/web-chess-eks.git](https://github.com/Jonh0330/web-chess-game.git
+cd web-chess-game
