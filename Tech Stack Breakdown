@@ -1,0 +1,11 @@
+🧱 Tech Stack Breakdown
+Layer	Tech/Service	Purpose
+Frontend	HTML/CSS/JS (or React)	Web UI
+Backend API	C# (.NET Core Web API) OR Node.js	Game logic, matchmaking
+Containers	Docker	Package frontend/backend
+Cluster	Amazon EKS	Orchestration
+Ingress	AWS ALB Ingress Controller	Load balancing traffic
+CI/CD	GitHub Actions / CodePipeline	Auto deploy containers
+DevOps Tool	Cloud9 / local dev	Coding & config
+Database	Amazon RDS (PostgreSQL) or DynamoDB	Game state, users
+Static Assets	Amazon S3 + CloudFront (optional)	Frontend hosting
