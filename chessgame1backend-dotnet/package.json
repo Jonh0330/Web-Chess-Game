@@ -1,0 +1,12 @@
+{
+  "name": "web-chess-game",
+  "version": "1.0.0",
+  "description": "A full-stack, containerized web-based chess game built with JavaScript, HTML/CSS, and a C#/.NET or Node.js backend, deployed on AWS using Kubernetes via Amazon EKS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
