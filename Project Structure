@@ -1,4 +1,4 @@
-web-chess-eks/
+web-chess-game/
 │
 ├── frontend/               # Web client
 ├── backend-dotnet/         # Backend in C#
