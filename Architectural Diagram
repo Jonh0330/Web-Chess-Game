@@ -1,0 +1,14 @@
+        [Browser]
+            |
+     HTTPS / REST API
+            |
+     +------▼--------+
+     | AWS ALB (Ingress)|
+     +------▼--------+
+      [Amazon EKS Cluster]
+     +--------+     +--------+
+     |Frontend|     |Backend |
+     |Pod(s)  |     |Pod(s)  |
+     +--------+     +--------+
+            |
+     [Amazon RDS / DynamoDB]
