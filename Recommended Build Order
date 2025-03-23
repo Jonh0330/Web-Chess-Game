@@ -1,0 +1,53 @@
+Recommended Build Order
+🔹 1. Backend Game Logic (Core Classes & API)
+💡 Why first? The game logic (rules, moves, turn tracking) is the brain of your app. You want a working engine before connecting a UI.
+
+✅ What to build:
+OOP classes (Game, Board, Piece, etc.)
+
+REST API to create a game, make a move, and get state
+
+A few unit tests (even basic ones) to make sure moves are valid
+
+⏳ Time frame: 2–4 sessions
+🔹 2. Frontend (Chessboard UI + API Integration)
+💡 Why second? Once your backend logic works, you can hook it into the frontend. This also makes it easier to debug — if the move breaks, is it the backend or UI?
+
+✅ What to build:
+Visual chessboard using chessboard.js
+
+Move pieces and send requests to backend
+
+Display game state (e.g. whose turn it is, invalid move messages)
+
+⏳ Time frame: 1–2 sessions (faster with working backend)
+🔹 3. Dockerize Backend & Frontend
+💡 Why now? You now have both pieces working — time to containerize so they run consistently on any machine (and prepare for EKS).
+
+✅ What to do:
+Write Dockerfiles for backend & frontend
+
+Run both locally using docker run or docker-compose
+
+Optional: push images to Docker Hub
+
+⏳ Time frame: 1 session
+🔹 4. Kubernetes (EKS) Setup
+💡 Why last? You don’t want to fight AWS errors while still debugging app logic. Deploy only once you’re confident it works in Docker.
+
+✅ What to do:
+Create Deployment, Service, Ingress YAMLs
+
+Push images to Docker Hub or ECR
+
+Use kubectl apply to launch on EKS
+
+⏳ Time frame: 1–2 sessions depending on familiarity
+🛠️ Summary Checklist
+Task	Status
+✅ Backend OOP classes	⬜️
+✅ REST API (/move, /new)	⬜️
+✅ Frontend chessboard	⬜️
+✅ Frontend ↔ Backend API	⬜️
+✅ Dockerfiles	⬜️
+✅ Kubernetes manifests	⬜️
