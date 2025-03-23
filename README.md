@@ -40,8 +40,9 @@ A full-stack, containerized web-based chess game built with JavaScript, HTML/CSS
 - [Node.js](https://nodejs.org/) (for frontend dev)
 - [.NET SDK](https://dotnet.microsoft.com/) (if using C# backend)
 
-### Clone the Repo
+### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/web-chess-eks.git](https://github.com/Jonh0330/web-chess-game.git
+git clone https://github.com/Jonh0330/web-chess-game.git
 cd web-chess-game
+
