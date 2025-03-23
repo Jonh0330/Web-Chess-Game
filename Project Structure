@@ -1,0 +1,7 @@
+web-chess-eks/
+│
+├── frontend/               # Web client
+├── backend-dotnet/         # Backend in C#
+├── backend-node/           # Backend in Node.js
+├── k8s/                    # Kubernetes YAMLs
+└── README.md
